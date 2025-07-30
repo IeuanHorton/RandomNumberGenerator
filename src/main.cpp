@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
     std::cout << "Hello! Plesae choose a number to randomize to:" ;
     std::cin >> givenNumber;
     srand(static_cast<unsigned int>(time(0)));
-    responseNumber = (rand() & givenNumber) + 1;
+    responseNumber = (rand() % givenNumber) + 1;
     std::cout << "The random number I have chosen: " << responseNumber << std::endl;
     return 0;
 }
